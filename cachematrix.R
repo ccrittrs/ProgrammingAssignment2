@@ -2,6 +2,9 @@
 ## functions do
 
 ## Write a short comment describing this function
+#  makeCacheMatrix takes a matrix as an argument and 
+#  caches that matrix, as well as providing methods to 
+#  set, store and return both the original matrix and its inverse
 
 makeCacheMatrix <- function(orMat = matrix()) {
   # create the empty matrix to hold the inverse
@@ -30,6 +33,11 @@ makeCacheMatrix <- function(orMat = matrix()) {
 
 
 ## Write a short comment describing this function
+#  cacheSolve accepts a matrix as an argument and then 
+#  uses makeCacheMatrix (above) to determine if the input
+#  matrix's inverse has already been determined and if not
+#  it calculates that inverse and then caches it in
+#  makeCacheMatrix.
 
 cacheSolve <- function(orMat, ...) {
         ## Return a matrix that is the inverse of 'x'
